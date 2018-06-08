@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { RouterModule, Routes} from '@angular/router';
 import { PlayerComponent } from './player/player.component';
 import { TeamComponent } from './team/team.component';
+import { CoachComponent } from './coach/coach.component';
 
 const appRoutes: Routes = [
   {'path' : 'player', component:PlayerComponent},
@@ -16,7 +17,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     PlayerComponent,
-    TeamComponent
+    TeamComponent,
+    CoachComponent
   ],
   imports: [
     BrowserModule, FormsModule, RouterModule.forRoot(appRoutes), HttpModule
